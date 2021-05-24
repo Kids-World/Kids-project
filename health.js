@@ -38,29 +38,25 @@ function topFunction() {
 // }
 
 //////////////change styling///////
-function myFunction() {
-  document.getElementById("text").style.fontSize = "25px";
-  document.getElementById("text").style.color = "black";
-  document.getElementById("text").style.backgroundColor = "pink";
-}
-/////////////////////////////////////////////
+// function myFunction() {
+//   document.getElementById("text").style.fontSize = "25px";
+//   document.getElementById("text").style.color = "black";
+//   document.getElementById("text").style.backgroundColor = "pink";
+// }
+///////////////// need sub////////////////////////////
 
 function onButtonClick() {
-  document.getElementById("textInput").className = "show";
+  document.getElementById("tInput").className = "block";
   alert("We Recived Your Submition");
+  window.reset();
+  // document.getElementById("textInput").reset();
 }
 
 function showInputBox() {
   if (document.getElementById("textInput")) {
     document.getElementById("textInput").style.display = "block";
     alert("For Daily Health Advices Submit your E-mail");
-    // } else {
-    //   // IF INPUT BOX DOES NOT EXIST
-    //   var inputBox = document.createElement("INPUT");
-    //   inputBox.setAttribute("type", "text");
-    //   inputBox.setAttribute("id", "dynamicTextInput");
-    //   document.body.appendChild(inputBox);
-    //   alert("No");
+    document.getElementById("textInput").reset();
   }
 }
 // function subInputtBox() {
@@ -69,6 +65,22 @@ function showInputBox() {
 //     alert("For Daily Health Advices Submit your E-mail");
 //   }
 // }
+
+//// convert weight
 function weightConverter(valNum) {
   document.getElementById("outputKilograms").innerHTML = valNum / 2.2046;
 }
+
+///// Function feed prog
+
+function newPage() {
+  window.location =
+    "https://www.feedingyourkids.org/?gclid=Cj0KCQjwna2FBhDPARIsACAEc_Vw6ImCwIv-6mrCMZ4hfdcg62rYf7H9S7LMKUlWYFBOnN5PrdyjgDEaAhy8EALw_wcB";
+}
+
+//// Function to more suggestions
+
+// function newSugg() {
+//   window.location =
+//     "https://www.betterhealth.vic.gov.au/health/HealthyLiving/lunch-box-tips#food-suggestions-for-lunch-boxes";
+// }

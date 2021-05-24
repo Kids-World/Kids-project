@@ -1,31 +1,11 @@
 * {
   font-family: Arial, sans-serif;
+  /* background-color: yellow; */
 }
-
-/* div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
+/* 
+body {
+  background-color: yellow;
 } */
-
-/* body {
-        background-color: #8dc2f3;
-        } */
 header {
   background-color: white;
   top: 10;
@@ -42,8 +22,8 @@ h1 {
 }
 h2 {
   font-size: larger;
-  font-weight: bold;
-  color: white;
+  font-weight: normal;
+  color: black;
 }
 
 ul {
@@ -202,7 +182,7 @@ h3 {
 }
 
 .flip-card-back {
-  background-color: #fe8a71;
+  /* background-color: #fe8a71; */
   color: white;
   transform: rotateY(180deg);
 }
