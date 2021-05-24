@@ -11,7 +11,14 @@ let questionsArr = ['which one is a yellow square',
     'which one is a parrot',
     'which one is a yellow car',
     'which one is a green car',
-    'which one is a cat'];
+    'which one is a cat',
+    'which one is a purple-traingle',
+    'which one is a blue square',
+    'which one is a red square',
+    'which one is a green square',
+    'which one is a green circle'
+    
+];
 
 let imagesArr = ['yellow-rectangle.jpg',
     'blue-circle.png',
@@ -33,11 +40,15 @@ let imagesArr = ['yellow-rectangle.jpg',
     'green-circle.png',
     'blue-traingle.png'
 ];
-let imgsSection=document.getElementById('images');
+let imgsSection = document.getElementById('images');
 let img1 = document.getElementById('image1');
 let img2 = document.getElementById('image2');
 let img3 = document.getElementById('image3');
-let imgNum = random(1, 3);
+let questionParagraph = document.getElementById("question_paragrph_id");
+let answerParagraph = document.getElementById("answer_paragraph_id");
+let scorePoints = document.getElementById("score");
+let correctImage = 0;
+
 
 
 pic.all = [];
@@ -141,23 +152,24 @@ function setImage(imageIndex, questionIndex, num) {
 //-----------show the images-------------------------
 
 function renderImgs() {
-   
+    let imgNum = random(1, 3);
+    correctImage = imgNum;
     let index = random(0, questionsArr.length - 1);
-    let randomImageIndex=random(0 , imagesArr.length - 1);
-    while(index == randomImageIndex)
-    {
-        index=random(0 , questionsArr.length-1);
+    let randomImageIndex = random(0, imagesArr.length - 1);
+    while (index == randomImageIndex) {
+        index = random(0, questionsArr.length - 1);
     }
 
 
     let imgName = 'img';
     let ask = questionsArr[index];
     let answer = index;
+    questionParagraph.innerHTML = ask;
     console.log(index, answer)
-    document.writeln(ask);
+
 
     console.log("imgnum ", imgNum, 'randomImageIndex', randomImageIndex);
-    console.log("imgNum",imgNum);
+    console.log("imgNum", imgNum);
     switch (imgNum) {
         case 1: img1.src = pic.all[index].path;
             console.log(pic.all[index].path);
@@ -173,6 +185,7 @@ function renderImgs() {
     }
     console.log('we are here in render images');
     // img1.src = pic.all[answer].path;  
+
 }
 
 renderImgs();
@@ -185,32 +198,103 @@ let count = 0;
 //img2.addEventListener('click' , handleImg2);
 //img3.addEventListener('click',handleImg3);
 
+let sounds = ["http://codeskulptor-demos.commondatastorage.googleapis.com/descent/gotitem.mp3",
+        "http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/eatedible.ogg",
+        "http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a"
 
-imgsSection.addEventListener('click',handleEvent)
-function handleEvent(events)
-{  events.preventDefault();
-    if (count ===attemps) { alert(`no more clicks , you have reached ${numOfClicks} click`) }
+];
+
+imgsSection.addEventListener('click', handleEvent)
+function handleEvent(events) {
+
+    let audio = new Audio();
+    audio.src;
+  let correctAnswerSound =new sound(sounds[0]);
+  let wrongAnswerSound=new sound(sounds[1]);
+  let popScroeSound=new sound(sounds[2]);
+ 
+
+    //audio.load();
+    // audio.play().then(() => {
+    //     // Audio is playing.
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    //   });
+    //let mysound=loadSound('ehab-tawfik-tetragaFya.mp3');
+    // sound('assests/ehab-tawfik-tetragaFya.mp3');
+    if (count === attemps) { alert(`no more clicks , you have reached ${count} click`) }
     else {
-        if (events.target.id != 'images') {
-            if (events.target.id === img1.id)
-                points++
+        console.log("correct image", correctImage);
 
-            else if (events.target.id === img2.id)
-                points++;
-            else
-                points++;
+        switch (correctImage) {
+            case 1:
+                if (events.target.id == image1.id) {
+                    points++;
+                    answerParagraph.innerHTML = "correct";
+                    correctAnswerSound.play();
+                    console.log("case 1");
+                }
+                else {
+                    wrongAnswerSound.play();
+                    answerParagraph.innerHTML = "wrong";
+                }
+                break;
+            case 2:
+                if (events.target.id == image2.id) {
+                    points++;
+                    correctAnswerSound.play();
+                    answerParagraph.innerHTML = "correct";
+                    console.log("case 2");
+                }
+                else {
+                   wrongAnswerSound.play();
+                    answerParagraph.innerHTML = "wrong";
+                }
+                break;
+            case 3:
+                if (events.target.id == image3.id) {
+                    points++;
+                    correctAnswerSound.play();
+                    answerParagraph.innerHTML = "correct";
+                    console.log("case 3");
+                }
+                else {
+                   wrongAnswerSound.play();
+                    answerParagraph.innerHTML = "wrong";
+                }
+                break;
+
+
         }
-        console.log("showImges()" , renderImgs);
         renderImgs();
         count++;
-       
+        console.log('points', points);
     }
- 
+
+    console.log("showImges()", renderImgs);
+    if(attemps == count){
+        wrongAnswerSound.stop();
+    correctAnswerSound.stop();    
+    popScroeSound.play();
+    scorePoints.innerHTML = "your score is " + points+"/10"
+    }
+
 }
 
-
-
- 
-
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function () {
+        this.sound.play();
+    }
+    this.stop = function () {
+        this.sound.pause();
+    }
+}
 
 
