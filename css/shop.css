@@ -37,8 +37,7 @@ main{
     height:  600px;
 }
 
-
-   
+  
  main .h1 {
 font-size: xx-large;
 font-weight: bolder;
@@ -119,24 +118,69 @@ table {
     overflow: auto;
     border-collapse: separate;
     border-spacing: 50px  100px;
+    border: solid yellow;
 }
 #item-table img {
-    position: relative;
+    /*position: relative;*/
     width: 250px;
     height: 230px;
 }
 
 #item-table td {
+
+    font-weight: bold;
+    color: violet;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(248, 252, 6, 0.919), 0 6px 20px 0  rgba(6, 215, 252, 0.919);
         text-align: center;
-        box-shadow: 0 4px 8px 0 rgba(17, 218, 245, 0.919), 0 6px 20px 0  rgba(253, 11, 144, 0.919);
+        
+
     }
 
     
     #item-table span {
         display: block;
-        margin-top: 50px;
+        margin-top: 20px;
         text-align: center;
         align-items: center;
+        background-color: yellow;
+
+      
+        
+
     
+    }
+
+    #item-table div:hover{
+        opacity: 1;
+        scale: 2;
+       
+    }
+    
+    button {
+        width: 252px;
+        padding: 17px;
+        top: 0px;
+        font-size: 22px;
+        color:  white;
+        background-color:rgb(69, 117, 145);
+        text-align: center;
+        text-indent: 3px; 
+        border: none;
+        opacity: 1;
+        font-family: serif;
+    
+    }
+    
+    button:hover{
+        background: rgba(245, 150, 205, 0.919);
+        opacity: 1;
+        scale: 1.2;
+        cursor: pointer;
+        
+    }
+    
+    button:disabled {
+        background-color:  rgba(245, 150, 205, 0.919); 
+        color: white;
     }

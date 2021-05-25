@@ -22,15 +22,17 @@
 
    </header>
    <main>
-     <nav>
+
+    <h1 class="h11">CART</h1>
+     <!--nav>
        <ul>
          <li>
            <a href="shop.html">shop</a>
          </li>
        </ul>
-     </nav>
-    <section id='background'>
-        <h1>Cart Page</h1>
+     </nav-->
+    <section class='background'>
+        
     </section>
     <section id='table'>
         <table id="cart-table">
@@ -48,17 +50,17 @@
           <fieldset>
             <legend> Customer Payment Data </legend>
              <p id="formTotal"></p>
-            <label for="CustomerIDModal"><span class="number">1</span> Customer ID & Phone Number </label>
+            <label for="CustomerIDModal"><span class="number"></span> Customer ID & Phone Number </label>
             <input type="number" id="CustomerIDModal" placeholder="Enter Customer ID *" required>
-            <input type="number" id="number" placeholder="Enter Phone number *" required>
+            <input type="number" id="number" placeholder="Enter Phone number *" required><br> <br>
       
-            <label for="CustomerIDModal"><span class="number">2</span> Email & Adress</label>
+            <label for="CustomerIDModal"><span class="number"></span> Email </label>
             <input type="email" id="email" placeholder="Your Email *" required>
-            <textarea id="location" placeholder="Enter your location" required></textarea>
+           
           </fieldset>
       
           <fieldset>
-            <label for="CustomerIDModal"><span class="number">3</span> Payment Options & Card Number</label>
+            <label for="CustomerIDModal" ><span class="number"></span> Payment Options & Card Number</label>
             <div class="row">
               <div class="col-xs-12 col-md-4">
                 <div class="panel panel-default credit-card-box">
@@ -84,7 +86,7 @@
           </fieldset>
          
          
-          <input id="submitButton" type="submit" onclick=" submit1();setTimeout(changePage, 1)" value="Proceed ^_^" >
+          <input id="submitButton" type="submit" onclick=" submit1();setTimeout(changePage, 0)" value="Proceed" >
           <button class='closebtn' onclick="pauseAudio()"><a class='btnclose' href="index.html">Close</a></button>
         </form>
       </div>

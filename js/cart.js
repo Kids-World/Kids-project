@@ -162,11 +162,23 @@ Array.prototype.remove = function () {
    function submit1() { 
      IsValed();
      if(isValed === false) return;
-     var x = document.getElementById("happyAudio"); 
-     x.play(); 
-     localStorage.removeItem('cart')
+     alert('hiiiiiiiii');
+     if (window.confirm('Thanks for visiting our site , would you like to provide us with feedback !!'))
+     {
+         window.location.href = "feedback.html";
+         window.location.replace("feedback.html");
+     }
+     else
+     {
+         window.location.href = "index.html";
+         window.location.replace("index.html") ;  
+     }
+     //var x = document.getElementById("happyAudio"); 
+     //x.play(); 
+     //localStorage.removeItem('cart')
+     /*changePage();*/
    }
-   function changePage() {
+   /*function changePage() {
      if(isValed === false) return;
      if (window.confirm('Thanks for visiting our site , would you like to provide us with feedback !!'))
      {
@@ -178,7 +190,7 @@ Array.prototype.remove = function () {
          window.location.href = "index.html";
          window.location.replace("index.html")   
      }
-   }
+   }*/
  function pauseAudio() {
      var x = document.getElementById("happyAudio");
      x.pause();
