@@ -1,0 +1,15 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+
+table img {
+    width: 100px;
+    height: 100px;
+}
+
+#payForm{
+
+    display: none;
+}
+
