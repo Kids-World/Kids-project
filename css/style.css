@@ -1,66 +1,92 @@
+
 body{
     width: 0 auto;
 }
 header {
     display: block;
+  
 }
+
 header nav {
     position: fixed;
     display: block;
     width: 100%;
     top: 0;
     z-index: 10;
-    background-color: red;
+    height: 80px;
+    background-image: url('../images/home2.jpg');
+    /* background-color:yellow; */
   }
   header nav ul li {
       display: inline;
       padding: 10px;
   }
   header nav ul{
-      margin-top: 45px;
+    
       float: right;
       margin-right: 30px;
+     
   }
   header nav ul li a {
       text-decoration: none;
-      color: white;
+      color: #e93b81;
       cursor: pointer;
+      font-size: 20px;
+      font-family: sans-serif;
+
     }
     header nav ul li a:hover{
-   background-color: blue;
+   background-color:black;
    font-size: 18px;
     }
+
     div h1{
     text-align: left;
     float: inline-end;
+    color: #e93b81;
+    font-family: 'Frosty', sans-serif;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 div img {
 float: left;
 width: 100px;
 height: 100px;
 }
-
-.break{
-    padding: 30px;
+main{
+  margin-top: 50px;
 }
+/* .break{
+    padding: 20px;
+} */
 p {
     text-align: center;
     margin-top: 10px;
 }
+
+/* .lego{
+  background-image: url
+} */
 footer{
-    background-color: red;
+  background-image: url('../images/home2.jpg');
+    height: 60px;
 }
 #social li {
-    font-size: 18px;
+    /* font-size: 18px; */
     display: inline-block;
     padding: 0 5px;
+    padding-top: 20px;
   }
   #contact {
-    color: gray;
+    color: #e93b81;
     margin-right: 10px;
     font-size: 18px;
     transform: translateY(30%);
     float: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 7px;
   }
   .animation {
     width: 100%;
@@ -100,7 +126,7 @@ footer{
   .animation li:nth-child(3) {
     opacity: 0;
     animation-delay: 16s;
-    background-image: url('../images/background3.gif');
+    background-image: url('../images/home2.jpg');
   }
   @keyframes imageAnimation {
     0% {
@@ -120,9 +146,12 @@ footer{
   }
 .slideshow{
     margin:0 auto;
-    padding-top:50px;
+    padding-top:200px;
     height: 700px;
     box-sizing:border-box;
+     background-color: #e93b81; 
+    
+    width: 100%;
 }
 .content{
     margin: auto;
@@ -130,7 +159,10 @@ footer{
     perspective:1000px;
     position: relative;
     padding-top: 80px;
+    /* font-family: sans-serif; */
+ 
 }
+
 .content-carrousel{
 
     width: 100%;
@@ -234,4 +266,4 @@ footer{
   
 
  
- 
+
