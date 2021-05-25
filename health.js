@@ -3,9 +3,10 @@
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down show the button
-// window.onscroll = function () {
-//   scrollFunction();
-// };
+
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
@@ -45,20 +46,20 @@ function topFunction() {
 // }
 ///////////////// need sub////////////////////////////
 
-function onButtonClick() {
-  document.getElementById("tInput").className = "block";
-  alert("We Recived Your Submition");
-  window.reset();
-  // document.getElementById("textInput").reset();
-}
+// function onButtonClick() {
+//   document.getElementById("tInput").className = "block";
+//   alert("We Recived Your Submition");
+//   window.reset();
+//   // document.getElementById("textInput").reset();
+// }
 
-function showInputBox() {
-  if (document.getElementById("textInput")) {
-    document.getElementById("textInput").style.display = "block";
-    alert("For Daily Health Advices Submit your E-mail");
-    document.getElementById("textInput").reset();
-  }
-}
+// function showInputBox() {
+//   if (document.getElementById("textInput")) {
+//     document.getElementById("textInput").style.display = "block";
+//     alert("For Daily Health Advices Submit your E-mail");
+//     document.getElementById("textInput").reset();
+//   }
+// }
 // function subInputtBox() {
 //   if (document.getElementById("textSubt")) {
 //     document.getElementById("textSub").style.display = "block";
