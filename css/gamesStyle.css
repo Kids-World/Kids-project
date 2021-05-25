@@ -136,6 +136,20 @@ h1{
     text-align: center;
 } 
 
+button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #BEE3E2;
+    color: #129995;
+
+
+}
+
+button:hover{
+    background-color: #993812;
+    color: rgb(247, 243, 243);
+}
+
 
 
 

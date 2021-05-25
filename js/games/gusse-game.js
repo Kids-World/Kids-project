@@ -59,6 +59,9 @@ let answerParagraph = document.getElementById("answer_paragraph_id");
 let scorePoints = document.getElementById("score");
 let correctImage = 0;
 let playerName=prompt("what's your name ?")
+let home_btn=document.getElementById("home-btn");
+let divButtons=document.getElementById("buttons");
+divButtons.style.visibility="hidden";
 
 
 
@@ -265,8 +268,9 @@ let popScroeSound = new sound(sounds[2]);
         wrongAnswerSound.stop();
         correctAnswerSound.stop();
         popScroeSound.play();
+        divButtons.style.visibility="visible"
         scorePoints.setAttribute('class', 'scoreParagraph');
-        scorePoints.innerHTML = "your score is " + points + "/10"
+        scorePoints.innerHTML = "your score is " + points + "/10";
     }
 
 }
@@ -296,5 +300,12 @@ function wrongAnserPopBox()
     answerParagraph.setAttribute('class','wrongAnswer');
     answerParagraph.innerHTML = "wrong ,  "+motivationArr[wrongMessageIndex];
 }
+
+// home_btn.addEventListener('click',handle);
+
+// function handle(event)
+// {
+
+// }
 
 
