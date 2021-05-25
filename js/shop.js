@@ -228,7 +228,7 @@ function cart(event) {
        let disableButton = document.getElementsByClassName(arrayOfProducts[index].name)[0];
         disableButton.setAttribute('disabled', true);
         disableButton.textContent = 'Added to the Cart';
-        alert('hello');
+       
       }
     }
    storeData();
