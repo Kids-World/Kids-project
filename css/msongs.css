@@ -1,0 +1,62 @@
+main{
+    background-image: url('../songimg/songs.jpg');
+}
+
+h1{
+    color: blue;
+}
+
+
+
+.container{
+ display: inline-block;
+padding: 50px 100px;
+margin: 47px;
+
+}
+
+img.imgcollect{
+    width:302px;
+    height: 200px;
+
+}
+h2{
+    text-decoration: none;
+    color:brown;
+}
+h2#ww{
+    color:rgb(83, 83, 233);
+    text-decoration: none;
+}
+#ss{
+    color:rgb(151, 202, 10);
+}
+
+div#render {
+    display:inline;
+    width: 100px;
+}
+
+img.ras-img{
+    width: 200px;
+}
+
+div#render{
+    
+    color:orangered;
+    text-align:center;
+    font-size:x-large;
+    display:ruby-base;
+}
+
+div#audiotext a{
+    color: rgb(83, 83, 233);
+    text-decoration: none;
+    font-size: x-large;
+}
+div#vediotext a{
+    text-decoration: none;
+    font-size: x-large;
+    color:rgb(151, 202, 10);
+
+}
