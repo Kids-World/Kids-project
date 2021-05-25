@@ -1,3 +1,4 @@
+
 body{
     width: 0 auto;
 }
@@ -125,7 +126,7 @@ footer{
   .animation li:nth-child(3) {
     opacity: 0;
     animation-delay: 16s;
-    background-image: url('../images/background3.gif');
+    background-image: url('../images/home2.jpg');
   }
   @keyframes imageAnimation {
     0% {
@@ -265,4 +266,4 @@ footer{
   
 
  
- 
+
