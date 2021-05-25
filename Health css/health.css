@@ -2,10 +2,17 @@
   font-family: Arial, sans-serif;
   /* background-color: pink; */
 }
-/* 
+
 body {
-  background-color: yellow;
-} */
+  /* background-color: #d8bfd8; */
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(152, 110, 194, 1) 40%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
 header {
   background-color: white;
   top: 10;
@@ -13,7 +20,7 @@ header {
   padding: 10px;
 }
 h1 {
-  color: purple;
+  color: black;
   padding: 50px;
   /* position: relative; */
   top: 100px;
@@ -25,18 +32,22 @@ h2 {
   text-align: center;
   font-weight: bolder;
   /* color: #f9f871; */
-  color: purple;
+  color: wheat;
 }
 .p5 {
   text-align: left;
   font-weight: bolder;
   /* color: #ffc75f; */
   font-size: 100%;
-  color: purple;
+  color: wheat;
 }
+/* .p6 {
+  font-weight: bold;
+  color: antiquewhite;
+} */
 
 p {
-  color: #4b0082;
+  color: wheat;
   font-size: large;
   font-weight: 500;
   /* justify-items: normal; */
@@ -74,22 +85,13 @@ p {
         } */
 
 #food {
-  /* display: inline-block; */
-  background-color: salmon;
-  /* border-radius: 10px; */
-  /* border: 4px double #cccccc; */
+  background-color: blueviolet;
   color: wheat;
   text-align: center;
   /* font-size: 10px; */
   /* padding: 4px 10px; */
   /* width: 200px; */
 }
-
-/* h3 {
-  font-size: large;
-  font-weight: bolder;
-  color: darkorchid;
-} */
 
 #myBtn {
   display: none;
@@ -112,13 +114,6 @@ p {
   color: 1;
 }
 
-/* p {
-    background: aqua;
-    border: 3px solid blue;
-    padding: 10px;
-    margin: 10px;
-  } */
-
 #img1 {
   border: 4px;
   position: right;
@@ -128,16 +123,6 @@ p {
   width: 50%;
   height: 50%;
 }
-/* 
-#myDiv {
-  border: 3px solid #fe8a71;
-  width: 250px;
-  height: 250px;
-  overflow: scroll;
-  font-size: large;
-  background-color: wheat;
-} */
-
 /* cards */
 .flip-card {
   background-color: transparent;
@@ -173,8 +158,8 @@ p {
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: plum;
+  color: wheat;
 }
 
 .flip-card-back {
@@ -207,7 +192,8 @@ p {
 button {
   /* display: inline-block; */
   border-radius: 10px;
-  background-color: salmon;
+  /* background-color: salmon; */
+  background-color: blueviolet;
   border: 4px double #cccccc;
   color: wheat;
   /*   text-align: center; */
