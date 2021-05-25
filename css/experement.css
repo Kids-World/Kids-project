@@ -3,29 +3,103 @@
     font-family: 'Allerta', arial, Tahoma;
     box-sizing: border-box;
 } */
+
+
+
+
+body{
+    width: 0 auto;
+}
+
+header {
+    display: block;
+    /* margin-bottom: 100px; */
+    
+}
+
+header nav {
+    /* position: fixed; */
+    display: block;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 140px;
+    background-image: url('../images/home2.jpg') ;
+    background-color:yellow; 
+}
+header nav ul li {
+    display: inline;
+    padding: 10px;
+}
+header nav ul{
+    
+    float:inline-end;
+  
+
+    /* margin-right: 30px; */
+    margin-left: 500px;
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e93b81;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+header nav ul li a:hover{
+    background-color:black;
+    font-size: 18px;
+}
+ul#social{
+    margin: 0px;
+}
+
+div h1{
+    text-align: left;
+    float:inline-end;
+    color: #e93b81;
+    font-family: 'Frosty', sans-serif;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+main{
+  margin-top: 50px;
+}
+
 body {
-    background: linear-gradient(to left, #7700aa, #8800ff);
+    background-color:palevioletred;
     text-align:center;
     color:#fff;
     width: 0 auto;
-}
-h1{
-    text-align: left;
+    margin:100px;
+    margin-top: 50px;
 }
 
-header nav ul a{
-    text-decoration: none;
-    padding: 20px;
-    color: black;
+footer{
+    background-image: url('../images/home2.jpg');
+      height: 80px;
+  }
+  #social li {
+      /* font-size: 18px; */
+      display: inline-block;
+      padding: 0 5px;
+      padding-top: 20px;
+    }
+    #contact {
+      color: #e93b81;
+      margin-right: 10px;
+      font-size: 18px;
+      transform: translateY(30%);
+      float: right;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding-top: 7px;
+    }
 
-}
-header nav ul a:hover{
-color: brown;
-font-size: large;
-}
-header nav ul{
-    text-align: right;
-}
 /* Start  styling the page */
 .container-audio {
     width: 66%;
@@ -36,6 +110,7 @@ header nav ul{
     color: #444;
     margin: 20px auto;
     overflow: hidden;
+    background-image: url('../songimg/music.jpg');
 }
 .hand{
     float: left;
@@ -50,9 +125,13 @@ audio {
 
 .hd{
 text-align:justify;
+font-size: x-large;
+font-weight: bolder;
 }
 .hda{
     text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
 }
 .baby{
     width: 50%;
