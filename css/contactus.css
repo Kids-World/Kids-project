@@ -1,31 +1,84 @@
-*{
-    box-sizing: border-box;
-}
 
 body{
-    background-color:#845ec2;
+    width: 0 auto;
+}
+header {
+    display: block;
+  
 }
 
-h3{
-    color: white;
-    font-size: 40px;
-    font-family: cursive;
+div#body p{
+
+    color: #e93b81;
+    font-size: 25px;
+    font-family: sans-serif;
 }
+
+header nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 80px;
+    background-image: url('../images/home2.jpg');
+   
+  }
+  header nav ul li {
+      display: inline;
+      padding: 10px;
+  }
+  header nav ul{
+    
+      float: right;
+      margin-right: 30px;
+     
+  }
+  header nav ul li a {
+      text-decoration: none;
+      color: #e93b81;
+      cursor: pointer;
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+    header nav ul li a:hover{
+   background-color:black;
+   font-size: 18px;
+    }
+    div h1{
+        text-align: left;
+        float: inline-end;
+        color: #e93b81;
+        font-family: 'Frosty', sans-serif;
+        font-size: 50px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
 
 label{
-    color: white;
+    color: #e93b81;
     font-size: 18px;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
 fieldset{
-    color: white;
+    color: #e93b81;
     font-size: 18px;
-    font-family: cursive;
+    font-family: sans-serif;
     border-style:groove;
-    border-color: white;
+    
+    font-weight: bold;
     margin-top: 10%;
     padding: 30px;
+}
+
+
+
+main{
+    background-image: url('../img/contact.jpg');
+    background-repeat: no-repeat;
 }
 
 fieldset input{
@@ -46,9 +99,9 @@ textarea{
 }
 
 #btn{
-background-color: #f9f871;
+background-color: #e93b81;
 border: none;
-color: #845ec2;
+color: white;
 padding: 16px 32px;
 text-decoration: none;
 margin: 4px 2px;
@@ -59,3 +112,35 @@ font-size: 20px;
 margin-left: 41%;
 font-family: cursive;
 }
+footer{
+    background-image: url('../images/home2.jpg');
+      height: 60px;
+  }
+  #social li {
+      /* font-size: 18px; */
+      display: inline-block;
+      padding: 0 5px;
+      padding-top: 20px;
+    }
+    #contact {
+      color: #e93b81;
+      margin-right: 10px;
+      font-size: 18px;
+      transform: translateY(30%);
+      float: right;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding-top: 7px;
+    }
+
+    #name{
+        width: 1500px;
+    }
+
+    #email{
+        width: 1500px;
+    }
+
+    #number{
+        width: 1500px;   
+    }
