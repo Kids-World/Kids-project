@@ -1,19 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const btn = document.querySelector(".submit-rating");
 const thanksmsg = document.querySelector(".thanks-msg");
 const starRating = document.querySelector(".star-input");
