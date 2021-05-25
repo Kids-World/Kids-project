@@ -39,7 +39,9 @@ float: left;
 width: 100px;
 height: 100px;
 }
-
+main{
+  margin-top: 50px;
+}
 .break{
     padding: 30px;
 }
