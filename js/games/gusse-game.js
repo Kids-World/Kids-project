@@ -65,6 +65,7 @@ divButtons.style.visibility="hidden";
 
 
 
+
 pic.all = [];
 
 function pic(name, extension) {
@@ -268,6 +269,8 @@ let popScroeSound = new sound(sounds[2]);
         correctAnswerSound.stop();
         popScroeSound.play();
         divButtons.style.visibility="visible"
+        divButtons.setAttribute("class","zoomInDown")
+        
         scorePoints.setAttribute('class', 'scoreParagraph');
         scorePoints.innerHTML = "your score is " + points + "/10";
     }
