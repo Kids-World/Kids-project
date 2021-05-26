@@ -25,14 +25,13 @@ header nav ul li {
     padding: 10px;
 }
 header nav ul{
-    
-    float:inline-end;
-  
-
-    /* margin-right: 30px; */
-    margin-left: 800px;
-    
+    /* float: inline-end; */
+    /* margin-left: 500px; */
+    float:right;
+    margin-right: 30px;
+    margin-top: -90px;
 }
+
 
 header nav ul li a {
     text-decoration: none;
@@ -66,7 +65,7 @@ div h1{
 }  */
 
 main{
-  background-image: url('../songimg/songs.jpg');
+  background-color: #e93b81;
 }
 
 
@@ -119,11 +118,14 @@ div#audiotext a{
     color: rgb(83, 83, 233);
     text-decoration: none;
     font-size: x-large;
+    margin-right: 117px;
 }
 div#vediotext a{
     text-decoration: none;
     font-size: x-large;
     color:rgb(151, 202, 10);
+    margin-right: 125px;
+
 
 }
 
@@ -147,3 +149,10 @@ footer{
       font-weight: bold;
       padding-top: 7px;
     }
+
+.imgcollect{
+    border-radius: 50%;
+    margin-right: 45px;
+    padding-left: 35px;
+
+}
