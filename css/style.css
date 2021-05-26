@@ -61,6 +61,7 @@ height: 200px;
 .newapp img{
   margin-top: 250px;
   padding: 25px;
+  border-radius: 50%;
 }
 .newapp img:first-child{
   margin-left: 50px;
@@ -281,11 +282,12 @@ footer{
   }
   
   .content-details h3{
-    color: rgb(199, 9, 9);
-    font-weight: 500;
+    color: black;
+    font-weight: bolder;
     letter-spacing: 0.15em;
     margin-bottom: 0.5em;
     text-transform: uppercase;
+    
   }
   
 
