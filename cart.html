@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link href="http://fonts.cdnfonts.com/css/frosty" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,19 +21,47 @@
   </audio>
 
    <header>
+    <nav>
+      <div>
+          
+          <h1>Kids World</h1>
+      </div>
+      <div class="cloud" >
+          <div class="cloudElement"></div>
+      </div>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+         
+          <li><a href="contactus.html">Contact us </a></li>
 
+      </ul>
+
+  </nav>
    </header>
    <main>
-     <nav>
-       <ul>
-         <li>
-           <a href="shop.html">shop</a>
-         </li>
-       </ul>
-     </nav>
-    <section id='background'>
-        <h1>Cart Page</h1>
-    </section>
+    <h1 class="h11">CART</h1>
+    <!--nav>
+      <ul>
+        <li id="shooop">
+          <a href="shop.html">shop</a>
+        </li>
+      </ul>
+    </nav-->
+   <section class='background'>
+       
+   </section>
+   <nav>
+    <u id="shopa">
+        <li id="shopb">
+            <a id="shopc" href="shop.html">Back to Shop</a>
+        </li>
+    </ul>
+</nav>
+
+
+
     <section id='table'>
         <table id="cart-table">
             <tr class="tr1">
@@ -48,17 +78,17 @@
           <fieldset>
             <legend> Customer Payment Data </legend>
              <p id="formTotal"></p>
-            <label for="CustomerIDModal"><span class="number">1</span> Customer ID & Phone Number </label>
+            <label for="CustomerIDModal"><span class="number"></span> Customer ID & Phone Number </label>
             <input type="number" id="CustomerIDModal" placeholder="Enter Customer ID *" required>
-            <input type="number" id="number" placeholder="Enter Phone number *" required>
+            <input type="number" id="number" placeholder="Enter Phone number *" required><br><br>
       
-            <label for="CustomerIDModal"><span class="number">2</span> Email & Adress</label>
+            <label for="CustomerIDModal"><span class="number"></span> Email & Adress</label>
             <input type="email" id="email" placeholder="Your Email *" required>
             <textarea id="location" placeholder="Enter your location" required></textarea>
           </fieldset>
       
           <fieldset>
-            <label for="CustomerIDModal"><span class="number">3</span> Payment Options & Card Number</label>
+            <label for="CustomerIDModal"><span class="number"></span> Payment Options & Card Number</label>
             <div class="row">
               <div class="col-xs-12 col-md-4">
                 <div class="panel panel-default credit-card-box">
@@ -84,7 +114,7 @@
           </fieldset>
          
          
-          <input id="submitButton" type="submit" onclick=" submit1();setTimeout(changePage, 1)" value="Proceed ^_^" >
+          <input id="submitButton" type="submit" onclick=" submit1();setTimeout(changePage, 1)" value="Proceed" >
           <button class='closebtn' onclick="pauseAudio()"><a class='btnclose' href="index.html">Close</a></button>
         </form>
       </div>
@@ -95,7 +125,25 @@
   
  
       </main>
-      <footer></footer>
+      <footer>
+       
+        <ul id="social">
+          <a href="https://www.twitter.com">
+              <img src="https://www.net-aware.org.uk/siteassets/images-and-icons/application-icons/app-icons-twitter.png?w=585&scale=down" alt="">
+          </a>
+          <a href="https://www.instagram.com">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt=""> 
+          </a>
+          <a href="https://www.facebook.com/">
+              <img src="https://nveloop.com/wp-content/uploads/2021/02/instagram.jpg" alt="">
+          </a>
+          <ul id="contact">
+              <li>Phone number: +962 79 520 9793</li>
+              <li>Email: info@KidsWorld.com</li>
+          </ul>
+
+
+      </footer>
       <script src="js/cart.js"></script>
    
 </body>
