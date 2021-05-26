@@ -16,13 +16,84 @@
   background-color: #b0efeb;
 } */
 
-header {
+/*header {
   height: 80px;
   /* background-color: white;
   top: 10;
   width: 100%;
   padding: 10px; */
+
+
+
+  body{
+    width: 0 auto;
+    /*background-color: #aae4fa;*/
 }
+header {
+    display: block;
+    margin-top: -40px;
+  margin-left: 0%;
+}
+
+header nav {
+ 
+    display:block;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 120px;
+    background-image: url('../images/home2.jpg');
+    /* background-color:yellow; */
+  }
+  header nav ul li {
+      display: inline;
+      padding: 10px;
+      
+  }
+  header nav ul{
+    
+      float: right;
+      margin-right: 30px;
+      margin-top: -120px;
+    
+  }
+  header nav ul li a {
+      text-decoration: none;
+      color:#e93b81 ;
+      cursor: pointer;
+      font-size: 20px;
+      font-family: sans-serif;
+     
+
+    }
+    header nav ul li a:hover{
+   background-color:black;
+   font-size: 18px;
+    }
+
+    div h1{
+    text-align: left;
+    float: inline-end;
+    color: #e93b81;
+    font-family: 'Frosty', sans-serif;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#Shyu {
+/*float: left;
+/*width: 100px;
+height: 100px;*/
+margin-right: 40px;
+margin-left: 40px;
+margin-top: -20px;
+}
+
+
+
+
+
+
 h1 {
   color: black;
   padding: 50px;
@@ -32,36 +103,71 @@ h1 {
   font-size: 40px;
 }
 h2 {
-  font-size: larger;
-  text-align: center;
+  font-size: xx-large;
+  margin-left: 550px;
   font-weight: bolder;
   /* color: #f9f871; */
-  color: purple;
+  color: #e93b81;
 }
 
 .p5 {
-  text-align: left;
+  margin-left: 40px;
   font-weight: bolder;
   /* color: #ffc75f; */
   font-size: 100%;
-  color: white;
+  color:#e93b81;
+  font-size: x-large;
 }
 /* .p6 {
   font-weight: bold;
   color: antiquewhite;
 } */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 p {
-  color: wheat;
+  color: rgb(34, 180, 238);
   font-size: large;
   font-weight: 500;
   text-align: justify;
+  margin-right: 40px;
+  margin-left: 40px;
+  vertical-align: center;
+  margin-top: -20px;
   /* justify-items: normal; */
 }
+.sec1{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-#text {
+/*#text {
   animation-duration: 3s;
   animation-name: slidein;
+}*/
+
+#h4444 {
+
+  font-size: x-large;
+  margin-left: 40px;
+  font-weight: bolder;
+  /* color: #f9f871; */
+  color: #e93b81;
+  
+
 }
 
 @keyframes slidein {
@@ -92,12 +198,15 @@ p {
         } */
 
 #food {
-  background-color: blueviolet;
+  background-color: #e93b81;
   color: wheat;
   text-align: center;
   /* font-size: 10px;
   padding: 4px 10px;
   width: 200px; */
+  margin-top: -15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
 }
 
 #myBtn {
@@ -175,16 +284,19 @@ p {
   transform: rotateY(180deg);
 }
 .c1 {
-  color: purple;
+  color: #e93b81;
   text-align: justify;
+  margin-top: 15px;
 }
 .c2 {
-  color: purple;
+  color: #e93b81;
   text-align: justify;
+  margin-top: 15px;
 }
 .c3 {
-  color: purple;
+  color:#e93b81;
   text-align: justify;
+  margin-top: 15px;
 }
 #main {
   width: 1300px;
@@ -202,7 +314,7 @@ button {
   /* display: inline-block; */
   border-radius: 10px;
   /* background-color: salmon; */
-  background-color: blueviolet;
+  background-color: #e93b81;
   border: 4px double #cccccc;
   color: wheat;
   /*   text-align: center; */
@@ -219,24 +331,75 @@ button {
   }
 }
 /* unvisited link */
-a:link {
+/*a:link {
   color: red;
 }
 
 /* visited link */
-a:visited {
+/*a:visited {
   color: #f6cd61;
 }
 
 /* mouse over link */
-a:hover {
+/*a:hover {
   color: yellow;
 }
 
 /* selected link */
-a:active {
+/*a:active {
   color: blue;
+}*/
+footer{
+  background-image: url('../images/home2.jpg');
+    height: 60px;
 }
-footer {
-  height: 80px;
-}
+#social li {
+    /* font-size: 18px; */
+    display: inline-block;
+    padding: 0 5px;
+    padding-top: 20px;
+  }
+  #contact {
+    color: #e93b81;
+    margin-right: 10px;
+    font-size: 18px;
+    transform: translateY(30%);
+    float: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 7px;}
+    footer{
+      background-image: url('../images/home2.jpg');
+        height: 120px;
+    }
+    #social a {
+        font-size: 18px;
+        display: inline-block;
+        padding-left: 30px;
+        padding-top: 35px;
+      }
+      #social a:first-child{
+        margin-left: 100px;
+      }
+      #social a img{
+        width: 50px;
+        height: 50px;
+      }
+      #contact {
+        color: #e93b81;
+        margin-right: 10px;
+        font-size: 18px;
+        transform: translateY(30%);
+        float: right;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding-top: 7px;
+        margin-top: -40px;
+      }
+
+
+      #vvvv{
+margin-left: 320px;
+
+
+      }

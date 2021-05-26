@@ -129,13 +129,20 @@ div#vediotext a{
 
 footer{
     background-image: url('../images/home2.jpg');
-      height: 80px;
+      height: 120px;
   }
-  #social li {
-      /* font-size: 18px; */
+  #social a {
+      font-size: 18px;
       display: inline-block;
-      padding: 0 5px;
-      padding-top: 20px;
+      padding-left: 30px;
+      padding-top: 35px;
+    }
+    #social a:first-child{
+      margin-left: 100px;
+    }
+    #social a img{
+      width: 50px;
+      height: 50px;
     }
     #contact {
       color: #e93b81;

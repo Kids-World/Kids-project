@@ -33,11 +33,13 @@ header nav ul li {
 }
 header nav ul{
     
-    float:inline-end;
+    float:right;
+    /* margin-bottom: 80px; */
   
 
     /* margin-right: 30px; */
     margin-left: 500px;
+    
     
 }
 
@@ -76,18 +78,24 @@ body {
     color:#fff;
     width: 0 auto;
     margin:100px;
-    margin-top: 50px;
 }
 
 footer{
     background-image: url('../images/home2.jpg');
-      height: 80px;
+      height: 120px;
   }
-  #social li {
-      /* font-size: 18px; */
+  #social a {
+      font-size: 18px;
       display: inline-block;
-      padding: 0 5px;
-      padding-top: 20px;
+      padding-left: 30px;
+      padding-top: 35px;
+    }
+    #social a:first-child{
+      margin-left: 100px;
+    }
+    #social a img{
+      width: 50px;
+      height: 50px;
     }
     #contact {
       color: #e93b81;
