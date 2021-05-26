@@ -1,9 +1,9 @@
  img{
-     width: 28%;
+     width: 27.5%;
      height: 400px;
      margin-top: 20px;
      box-shadow: -2px -1px 11px 12px rgb(223, 235, 248)  ;
-     border: sold 2px white;
+     border: solid 4px white;
     
      
     
@@ -137,21 +137,90 @@ h1{
 } 
 
 button{
+    text-align: center;
+  
     cursor: pointer;
-    padding: 10px 20px;
-    background-color: #BEE3E2;
+    /* padding: 10px 20px; */
+    background-color: rgb(6, 0, 14);
+    box-shadow: -2px -1px 11px 2px rgb(255, 255, 255) ;
+    border: solid 3px white;
     color: #129995;
+    width: 100px;
+    height: 28px;
+    font-size: 10px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px;
 
+    
 
 }
 
 button:hover{
-    background-color: #993812;
+    animation-name:zoomIn;
+    animation-play-state: running;
+    background-color: green;
+    font-size: 13px;
+    animation-name:zoomIn;
+    box-shadow: -2px -1px 11px 2px rgb(6, 253, 60) ;
+    width: 120px;
+    height: 48px;
     color: rgb(247, 243, 243);
 }
 
+.playAgainBtn
+{
+    text-align: center;
+  
+    cursor: pointer;
+    /* padding: 10px 20px; */
+    background-color: rgb(255, 0, 0);
+    box-shadow: -2px -1px 11px 2px rgb(255, 255, 255) ;
+    border: solid 3px white;
+    color: wheat;
+    width: 100px;
+    height: 28px;
+    font-size: 10px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px;
+}
+.playAgainBtn:hover{
+    
+    background-color:  rgb(255, 0, 0);
+    font-size: 13px;
 
+    box-shadow: -2px -1px 11px 2px rgb(237, 240, 237) ;
+    width: 120px;
+    height: 48px;
+    color: rgb(247, 243, 243);
+}
 
-
-
- 
+.zoomIn {
+    -webkit-animation-name:zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    } 

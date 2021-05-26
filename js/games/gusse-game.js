@@ -165,7 +165,6 @@ function renderImgs() {
 
     switch (imgNum) {
         case 1: img1.src = pic.all[index].path;
-            console.log(pic.all[index].path);
             setImage(randomImageIndex, index, 1);
             break;
         case 2: img2.src = pic.all[index].path;
