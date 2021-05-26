@@ -65,6 +65,7 @@ divButtons.style.visibility="hidden";
 
 
 
+
 pic.all = [];
 
 function pic(name, extension) {
@@ -165,7 +166,6 @@ function renderImgs() {
 
     switch (imgNum) {
         case 1: img1.src = pic.all[index].path;
-            console.log(pic.all[index].path);
             setImage(randomImageIndex, index, 1);
             break;
         case 2: img2.src = pic.all[index].path;
@@ -269,6 +269,8 @@ let popScroeSound = new sound(sounds[2]);
         correctAnswerSound.stop();
         popScroeSound.play();
         divButtons.style.visibility="visible"
+        divButtons.setAttribute("class","zoomInDown")
+        
         scorePoints.setAttribute('class', 'scoreParagraph');
         scorePoints.innerHTML = "your score is " + points + "/10";
     }
