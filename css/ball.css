@@ -1,14 +1,14 @@
 /* *{
   box-sizing: border-box;
 } */
-body{
+/* body{
     width: 0 auto;
-}
+} */
 
 
 
 /* Container */
-#container {
+/* #container {
   position:absolute;
   height:36%;
   width:100%;
@@ -16,9 +16,9 @@ body{
   top: 0%;
  
   background:transparent;
-}
+} */
 
-/* Balls */
+/* Balls
 #redball, #greenball, #blueball  {
   position:absolute;
   height:70px;
@@ -46,6 +46,7 @@ body{
   border-right: 80px;
   background-color:rgb(24, 75, 218);
   }
+ */
 
 
 
@@ -54,8 +55,7 @@ body{
 
 
 
-
-
+/*  
 
 .star-rating form {
     display:none;
@@ -137,11 +137,12 @@ body{
 }
 form .submit-rating:hover {
     background-color: #333;
-}
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+} 
+*/
+ /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */ */
 
 
-/* 
+
 .star-rating form {
   display:none;
 }
@@ -222,8 +223,4 @@ form .submit-rating:hover {
 }
 form .submit-ratin:hover {
   background-color: #333;
-} */
-
-
-
-
+} 

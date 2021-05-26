@@ -41,6 +41,15 @@ let imagesArr = ['yellow-rectangle.jpg',
     'blue-traingle.png'
 ];
 
+let motivationArr=['you are smart',
+'keep going , you got it' , 
+'great work ' , 
+'good job' , 
+'Amazing',
+'so brilliant',
+'try again',
+'Don\'t stop']
+
 let imgsSection = document.getElementById('images');
 let img1 = document.getElementById('image1');
 let img2 = document.getElementById('image2');
@@ -49,6 +58,10 @@ let questionParagraph = document.getElementById("question_paragrph_id");
 let answerParagraph = document.getElementById("answer_paragraph_id");
 let scorePoints = document.getElementById("score");
 let correctImage = 0;
+let playerName=prompt("what's your name ?")
+let home_btn=document.getElementById("home-btn");
+let divButtons=document.getElementById("buttons");
+divButtons.style.visibility="hidden";
 
 
 
@@ -145,6 +158,7 @@ function renderImgs() {
     let ask = questionsArr[index];
     let answer = index;
     questionParagraph.innerHTML = ask;
+    questionParagraph.setAttribute('class' , 'questionParagraph');
 
 
 
@@ -173,22 +187,26 @@ let points = 0;
 let attemps = 10;
 let count = 0;
 
-
+//--------------------sounds----------------------------------
 let sounds = ["http://codeskulptor-demos.commondatastorage.googleapis.com/descent/gotitem.mp3",
     "http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/eatedible.ogg",
     "http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a"
 
 ];
+
+
+
 //----------------- handle every click to every correct image-------------------
 
 imgsSection.addEventListener('click', handleEvent)
 function handleEvent(events) {
-
-    let audio = new Audio();
-    audio.src;
     let correctAnswerSound = new sound(sounds[0]);
-    let wrongAnswerSound = new sound(sounds[1]);
-    let popScroeSound = new sound(sounds[2]);
+let wrongAnswerSound = new sound(sounds[1]);
+let popScroeSound = new sound(sounds[2]);
+    
+    // let audio = new Audio();
+    // audio.src;
+   
 
 
 
@@ -200,37 +218,39 @@ function handleEvent(events) {
             case 1:
                 if (events.target.id == image1.id) {
                     points++;
-                    answerParagraph.innerHTML = "correct";
                     correctAnswerSound.play();
+                   correctAnswerPopBox(playerName);
 
                 }
                 else {
                     wrongAnswerSound.play();
-                    answerParagraph.innerHTML = "wrong";
+                    wrongAnserPopBox();
                 }
                 break;
             case 2:
                 if (events.target.id == image2.id) {
                     points++;
                     correctAnswerSound.play();
-                    answerParagraph.innerHTML = "correct";
+                   correctAnswerPopBox(playerName);
+                    
+                    
 
                 }
                 else {
                     wrongAnswerSound.play();
-                    answerParagraph.innerHTML = "wrong";
+                    wrongAnserPopBox();
                 }
                 break;
             case 3:
                 if (events.target.id == image3.id) {
                     points++;
                     correctAnswerSound.play();
-                    answerParagraph.innerHTML = "correct";
+                   correctAnswerPopBox(playerName);
 
                 }
                 else {
                     wrongAnswerSound.play();
-                    answerParagraph.innerHTML = "wrong";
+                    wrongAnserPopBox()
                 }
                 break;
 
@@ -243,10 +263,14 @@ function handleEvent(events) {
 
 
     if (attemps == count) {
+        questionParagraph.style.display="none";
+        answerParagraph.style.display="none";
         wrongAnswerSound.stop();
         correctAnswerSound.stop();
         popScroeSound.play();
-        scorePoints.innerHTML = "your score is " + points + "/10"
+        divButtons.style.visibility="visible"
+        scorePoints.setAttribute('class', 'scoreParagraph');
+        scorePoints.innerHTML = "your score is " + points + "/10";
     }
 
 }
@@ -265,5 +289,23 @@ function sound(src) {
         this.sound.pause();
     }
 }
+
+function correctAnswerPopBox(name){
+    let motivationMessageIndex=random(0,5)
+    answerParagraph.setAttribute('class','correctAnswer');
+    answerParagraph.innerHTML = "correct , "+motivationArr[motivationMessageIndex]+" "+name;
+}
+function wrongAnserPopBox()
+{  wrongMessageIndex=random(6,7);
+    answerParagraph.setAttribute('class','wrongAnswer');
+    answerParagraph.innerHTML = "wrong ,  "+motivationArr[wrongMessageIndex];
+}
+
+// home_btn.addEventListener('click',handle);
+
+// function handle(event)
+// {
+
+// }
 
 

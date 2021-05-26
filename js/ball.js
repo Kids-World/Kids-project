@@ -138,24 +138,24 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ////
-const formRating=document.querySelectorAll('.ratingForm')
-for(let i=0;i<formRating.length;i++){
-  formRating[i].addEventListener('click',ratingHandler)
+// const formRating=document.querySelectorAll('.ratingForm')
+// for(let i=0;i<formRating.length;i++){
+//   formRating[i].addEventListener('click',ratingHandler)
 
-}
-// console.log(formRating);
-const btn = document.querySelectorAll(".submit-rating");
-const thanksmsg = document.querySelector(".thanks-msg");
-const starRating = document.querySelector(".star-input");
-// Success msg show/
+// }
+// // console.log(formRating);
+// const btn = document.querySelectorAll(".submit-rating");
+// const thanksmsg = document.querySelector(".thanks-msg");
+// const starRating = document.querySelector(".star-input");
+// // Success msg show/
 
-function ratingHandler(e) {
-    e.preventDefault();
-    starRating.style.display = "none";
-    thanksmsg.style.display = "table";
+// function ratingHandler(e) {
+//     e.preventDefault();
+//     starRating.style.display = "none";
+//     thanksmsg.style.display = "table";
   
-    return false;
-};
+//     return false;
+// };
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ////
