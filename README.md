@@ -1,5 +1,7 @@
 # Kids-project
-
+Group : D
+Team : Bosess Team
+Project name: Kids World
 
 
 
